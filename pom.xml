@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion> 
+  <parent>
+    <groupId>com.fasterxml.jackson</groupId>
+    <artifactId>jackson-parent</artifactId>
+    <version>2.7</version>
+  </parent>
+  <groupId>com.fasterxml.jackson.datatype</groupId>
+  <artifactId>jackson-jdk6-compat-test</artifactId>
+  <name>Jackson-jdk6-compat-test</name>
+  <version>2.7.2-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <description>Test suite for tracking JDK6 compatibility aspects of Jackson components that are supposed to
+remain JDK6 compatible
+</description>
+  <url>http://github.com/FasterXML/jackson-jdk6-compat-test</url>    
+  <scm>
+    <connection>scm:git:git@github.com:FasterXML/jackson-jdk6-compat-test.git</connection>
+    <developerConnection>scm:git:git@github.com:FasterXML/jackson-jdk6-compat-test.git</developerConnection>
+    <url>http://github.com/FasterXML/jackson-jdk6-compat-test</url>    
+    <tag>HEAD</tag>
+  </scm>
+  <properties>
+    <version.jackson.core>2.7.1</version.jackson.core>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>2.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>${version.jackson.core}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${version.jackson.core}</version>
+    </dependency>
+
+    <!-- Let's also check some commonly used libs -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-joda</artifactId>
+      <version>${version.jackson.core}</version>
+    </dependency>
+
+  </dependencies>
+</project>
