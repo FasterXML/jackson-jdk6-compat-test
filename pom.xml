@@ -25,7 +25,7 @@ remain JDK6 compatible
     <javac.src.version>1.6</javac.src.version>
     <javac.target.version>1.6</javac.target.version>
 
-    <version.jackson.core>2.7.1</version.jackson.core>
+    <version.jackson.core>2.7.2-SNAPSHOT</version.jackson.core>
   </properties>
 
   <dependencies>

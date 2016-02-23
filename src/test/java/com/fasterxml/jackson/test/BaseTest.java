@@ -7,7 +7,6 @@ import junit.framework.TestCase;
 
 import com.fasterxml.jackson.core.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.joda.JodaModule;
 
 public abstract class BaseTest
     extends TestCase
@@ -387,7 +386,8 @@ public abstract class BaseTest
 
     protected ObjectMapper newMapper() {
         return new ObjectMapper()
-            .registerModule(new JodaModule());
+            .registerModule(new com.fasterxml.jackson.datatype.joda.JodaModule())
+        ;
     }
 
     /*
