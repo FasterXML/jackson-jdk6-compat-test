@@ -8,3 +8,6 @@ Going forward this may become even bigger issue, when JDK8 features are to be in
 Further down the road it will stop becoming an issue once we stop supporting JDK6 runtime, but until then
 automated testing is necessary.
 
+## Status
+
+[![Build Status](https://travis-ci.org/FasterXML/jackson-jdk6-compat-test.svg)](https://travis-ci.org/FasterXML/jackson-jdk6-compat-test)
