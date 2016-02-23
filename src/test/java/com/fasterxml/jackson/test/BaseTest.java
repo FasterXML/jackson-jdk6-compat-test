@@ -387,6 +387,7 @@ public abstract class BaseTest
     protected ObjectMapper newMapper() {
         return new ObjectMapper()
             .registerModule(new com.fasterxml.jackson.datatype.joda.JodaModule())
+            .registerModule(new com.fasterxml.jackson.datatype.guava.GuavaModule())
         ;
     }
 
