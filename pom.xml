@@ -47,6 +47,13 @@ remain JDK6 compatible
       <version>${version.jackson.core}</version>
     </dependency>
 
+    <!-- JAXB sort of ubiquitous -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.module</groupId>
+      <artifactId>jackson-module-jaxb-annotations</artifactId>
+      <version>${version.jackson.core}</version>
+    </dependency>
+
     <!-- first, try to ensure dataformats work -->
     <dependency>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
