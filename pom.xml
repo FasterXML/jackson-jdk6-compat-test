@@ -26,6 +26,8 @@ remain JDK6 compatible
     <javac.target.version>1.6</javac.target.version>
 
     <version.jackson.core>2.7.2-SNAPSHOT</version.jackson.core>
+    <version.jackson.dataformat>${version.jackson.core}</version.jackson.dataformat>
+    <version.jackson.datatype>${version.jackson.core}</version.jackson.datatype>
   </properties>
 
   <dependencies>
@@ -45,16 +47,28 @@ remain JDK6 compatible
       <version>${version.jackson.core}</version>
     </dependency>
 
-    <!-- Let's also check some commonly used libs -->
+    <!-- first, try to ensure dataformats work -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-avro</artifactId>
+      <version>${version.jackson.dataformat}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-smile</artifactId>
+      <version>${version.jackson.dataformat}</version>
+    </dependency>
+
+    <!-- Let's also check some commonly used datatype libs -->
     <dependency>
       <groupId>com.fasterxml.jackson.datatype</groupId>
       <artifactId>jackson-datatype-joda</artifactId>
-      <version>${version.jackson.core}</version>
+      <version>${version.jackson.datatype}</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.datatype</groupId>
       <artifactId>jackson-datatype-guava</artifactId>
-      <version>${version.jackson.core}</version>
+      <version>${version.jackson.datatype}</version>
     </dependency>
 
   </dependencies>

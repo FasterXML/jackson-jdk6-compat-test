@@ -1,8 +1,9 @@
-package com.fasterxml.jackson.test;
+package com.fasterxml.jackson.test.dt;
 
 import org.joda.time.DateTime;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.test.BaseTest;
 
 /**
  * Simple tests to see that Joda module works too.
