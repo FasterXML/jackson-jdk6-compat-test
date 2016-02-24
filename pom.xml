@@ -77,8 +77,21 @@ remain JDK6 compatible
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-xml</artifactId>
+      <version>${version.jackson.dataformat}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
       <artifactId>jackson-dataformat-yaml</artifactId>
       <version>${version.jackson.dataformat}</version>
+    </dependency>
+
+    <!-- 23-Feb-2016, tatu: Looks like we better use Woodstox as Stax impl, too -->
+    <dependency>
+      <groupId>com.fasterxml.woodstox</groupId>
+      <artifactId>woodstox-core</artifactId>
+      <version>5.0.1</version>
+      <scope>test</scope>
     </dependency>
 
     <!-- Let's also check some commonly used datatype libs -->
