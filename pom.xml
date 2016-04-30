@@ -29,9 +29,9 @@ remain JDK6 compatible
 
     <!-- 12-Apr-2016, tatu: only core has full set of 2.8.0-SNAPSHOTs so...
       -->
-    <version.jackson.base>2.7.3</version.jackson.base>
-    <version.jackson.dataformat>2.7.3</version.jackson.dataformat>
-    <version.jackson.datatype>2.7.3</version.jackson.datatype>
+    <version.jackson.base>2.7.4</version.jackson.base>
+    <version.jackson.dataformat>2.7.4</version.jackson.dataformat>
+    <version.jackson.datatype>2.7.4</version.jackson.datatype>
   </properties>
 
   <dependencies>
