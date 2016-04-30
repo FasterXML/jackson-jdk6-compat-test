@@ -32,6 +32,7 @@ remain JDK6 compatible
     <version.jackson.base>2.7.4</version.jackson.base>
     <version.jackson.dataformat>2.7.4</version.jackson.dataformat>
     <version.jackson.datatype>2.7.4</version.jackson.datatype>
+    <version.jackson.module>2.7.4</version.jackson.module>
   </properties>
 
   <dependencies>
@@ -96,6 +97,13 @@ remain JDK6 compatible
       <artifactId>woodstox-core</artifactId>
       <version>5.0.2</version>
       <scope>test</scope>
+    </dependency>
+
+    <!-- Also, some modules... -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.module</groupId>
+      <artifactId>jackson-module-mrbean</artifactId>
+      <version>${version.jackson.module}</version>
     </dependency>
 
     <!-- Let's also check some commonly used datatype libs -->
