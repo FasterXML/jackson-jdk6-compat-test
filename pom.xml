@@ -4,12 +4,12 @@
   <parent>
     <groupId>com.fasterxml.jackson</groupId>
     <artifactId>jackson-bom</artifactId>
-    <version>2.9.0.pr2</version>
+    <version>2.9.0.pr3</version>
   </parent>
-  <groupId>com.fasterxml.jackson.datatype</groupId>
+  <groupId>com.fasterxml.jackson.util</groupId>
   <artifactId>jackson-jdk6-compat-test</artifactId>
   <name>Jackson-JDK-compat-test</name>
-  <version>2.9.0.pr2-SNAPSHOT</version>
+  <version>2.9.0.pr3-SNAPSHOT</version>
   <packaging>jar</packaging>
   <description>Test suite for tracking JDK6 compatibility aspects of Jackson components that are supposed to
 remain JDK6 compatible
