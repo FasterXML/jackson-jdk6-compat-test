@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.fasterxml.jackson</groupId>
     <artifactId>jackson-bom</artifactId>
-    <version>2.9.4</version>
+    <version>2.9.8</version>
   </parent>
   <groupId>com.fasterxml.jackson.util</groupId>
   <artifactId>jackson-jdk6-compat-test</artifactId>
@@ -76,7 +76,7 @@ remain JDK6 compatible
     <dependency>
       <groupId>com.fasterxml.woodstox</groupId>
       <artifactId>woodstox-core</artifactId>
-      <version>5.0.3</version>
+      <version>5.2.1</version>
       <scope>test</scope>
     </dependency>
 
