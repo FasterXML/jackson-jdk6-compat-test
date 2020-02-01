@@ -22,8 +22,9 @@ remain JDK6 compatible
     <tag>HEAD</tag>
   </scm>
   <properties>
-    <javac.src.version>1.6</javac.src.version>
-    <javac.target.version>1.6</javac.target.version>
+    <!-- 31-Jan-2020, tatu: Can't do JDK6 any more since databind moved with ... 2.9? -->
+    <javac.src.version>1.7</javac.src.version>
+    <javac.target.version>1.7</javac.target.version>
   </properties>
 
   <dependencies>
