@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.fasterxml.jackson</groupId>
     <artifactId>jackson-bom</artifactId>
-    <version>2.9.8</version>
+    <version>2.9.10</version>
   </parent>
   <groupId>com.fasterxml.jackson.util</groupId>
   <artifactId>jackson-jdk6-compat-test</artifactId>
@@ -14,16 +14,16 @@
   <description>Test suite for tracking JDK6 compatibility aspects of Jackson components that are supposed to
 remain JDK6 compatible
 </description>
-  <url>http://github.com/FasterXML/jackson-jdk6-compat-test</url>    
+  <url>https://github.com/FasterXML/jackson-jdk6-compat-test</url>    
   <scm>
     <connection>scm:git:git@github.com:FasterXML/jackson-jdk6-compat-test.git</connection>
     <developerConnection>scm:git:git@github.com:FasterXML/jackson-jdk6-compat-test.git</developerConnection>
-    <url>http://github.com/FasterXML/jackson-jdk6-compat-test</url>    
+    <url>https://github.com/FasterXML/jackson-jdk6-compat-test</url>    
     <tag>HEAD</tag>
   </scm>
   <properties>
-    <javac.src.version>1.6</javac.src.version>
-    <javac.target.version>1.6</javac.target.version>
+    <javac.src.version>1.7</javac.src.version>
+    <javac.target.version>1.7</javac.target.version>
   </properties>
 
   <dependencies>
@@ -76,7 +76,7 @@ remain JDK6 compatible
     <dependency>
       <groupId>com.fasterxml.woodstox</groupId>
       <artifactId>woodstox-core</artifactId>
-      <version>5.2.1</version>
+      <version>5.3.0</version>
       <scope>test</scope>
     </dependency>
 
